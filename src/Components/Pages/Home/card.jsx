@@ -12,52 +12,50 @@ const Card = ({ service }) => {
   return (
     <div>
       
-      <div className="card p-3 shadow-xl">
+      <div className="card p-3 shadow-lg">
         <figure>
-          <img className="" src={image} alt="Shoes" />
+          <img className="w-72" src={image} alt="Shoes" />
         </figure>
-        <h2 className="text-5xl font-bold my-8 text-center ">
+        <h2 className="text-2xl font-bold  text-center ">
         {eventType}
       </h2>
-        <div className="flex-row md:flex-row lg:flex gap-12 ">
-          <div className="space-y-4">
+        
+
             
+            <div className="space-y-2 mt-4">
             <div className="flex items-center">
-              <GiPartyHat className="text-2xl"></GiPartyHat>
-              <p className="text-xl font-bold">{venue} </p>
+              <GiPartyHat ></GiPartyHat>
+              <p>{venue} </p>
             </div>
-
-            <div className="flex items-center gap-4">
-              <BsCalendarDateFill className="text-2xl"></BsCalendarDateFill>
-              <p className="text-xl font-bold">{date}</p>
-            </div>
-
             <div className="flex items-center">
-              <AiTwotoneMail className="text-2xl"></AiTwotoneMail>
-              <p className="text-xl font-bold">{contactEmail}</p>
+              <HiLocationMarker ></HiLocationMarker>
+              <p>{location}</p>
             </div>
-          </div>
-          <div className="space-y-4 mt-8 md:mt-0 lg:mt-0">
-            <div className="flex items-center">
-              <HiLocationMarker className="text-2xl"></HiLocationMarker>
-              <p className="text-xl font-bold">{location}</p>
+            <div className="flex gap-5">
+           <div className="flex items-center ">
+              <BsCalendarDateFill ></BsCalendarDateFill>
+              <p >{date}</p>
             </div>
 
             <div className="flex items-center">
-              <GiBackwardTime className="text-2xl"></GiBackwardTime>
-              <p className="text-xl font-bold">{time}</p>
+              <GiBackwardTime ></GiBackwardTime>
+              <p>{time}</p>
+            </div>
+            </div>
+            <div className="flex items-center">
+              <AiTwotoneMail ></AiTwotoneMail>
+              <p >{contactEmail}</p>
+            </div>
+            <div className="flex items-center">
+              <BsFillTelephoneFill ></BsFillTelephoneFill>
+              <p >{contactPhone}</p>
+            </div>
             </div>
 
-            <div className="flex items-center">
-              <BsFillTelephoneFill className="text-2xl"></BsFillTelephoneFill>
-              <p className="text-xl font-bold">{contactPhone}</p>
-            </div>
-            
-          </div>
-        </div>
+        
         <div className="flex justify-center  mt-8">
       <Link to={`/service/${id}`}>
-            <button className="btn bg-gray-400 px-12 lg:px-60 py-3 rounded-lg">Details</button>
+            <button className="btn bg-gray-400  rounded-lg">Details</button>
             </Link>
       </div>
       
