@@ -24,12 +24,12 @@ const Details = () => {
       <h2 className="text-5xl font-bold my-8 text-center ">
         {service.eventType}
       </h2>
-      <div className="card max-w-5xl  mx-auto bg-base-100 shadow-xl">
+      <div className="card lg:max-w-5xl  mx-auto bg-base-100 shadow-xl">
         <figure>
           <img className="" src={service.image} alt="Shoes" />
         </figure>
 
-        <div className="flex py-12 pl-12 gap-24">
+        <div className="flex-row md:flex-row lg:flex py-12 px-4 lg:px-12 gap-24">
           <div className="space-y-4">
             <div className="flex items-center">
               <GiPartyHat className="text-4xl"></GiPartyHat>
@@ -46,7 +46,7 @@ const Details = () => {
               <p className="text-2xl font-bold">{service.contactEmail}</p>
             </div>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 mt-6 md:mt-0 lg:mt-0">
             <div className="flex items-center">
               <HiLocationMarker className="text-4xl"></HiLocationMarker>
               <p className="text-2xl font-bold">{service.location}</p>
@@ -70,7 +70,7 @@ const Details = () => {
 
 
       <h2 className='text-3xl font-bold text-center my-8'>Why Choose our Party Center for Your {service.eventType}:</h2>
-      <div className="grid grid-cols-2 max-w-5xl mx-auto gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto gap-8">
         <div className="card  bg-gray-300 shadow-xl">
           <div className="card-body">
             <h2 className="card-title">Spacious and Versatile Venue : </h2>

@@ -15,6 +15,7 @@ import AuthProvider from './AuthProvider/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import FamilyReunions from './Components/Pages/FamilyReunions/FamilyReunions';
 import HolidayParties from './Components/Pages/Holiday Parties/HolidayParties';
+import ErrorPage from './Error/ErrorPage';
 
 
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement : <ErrorPage></ErrorPage>,
     children: [
       {
         path : '/',

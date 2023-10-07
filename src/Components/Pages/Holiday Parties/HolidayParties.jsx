@@ -12,7 +12,7 @@ const HolidayParties = () => {
       
 
       <h2 className='text-3xl font-bold text-center my-8'>Why Choose our Party Center for Your Holiday party:</h2>
-      <div className="grid grid-cols-2 max-w-5xl mx-auto gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto gap-8">
         <div className="card  bg-gray-300 shadow-xl">
           <div className="card-body">
             <h2 className="card-title">Spacious and Versatile Venue : </h2>

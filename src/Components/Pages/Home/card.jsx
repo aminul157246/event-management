@@ -4,6 +4,8 @@ import { HiLocationMarker } from "react-icons/hi";
 import { BsCalendarDateFill, BsFillTelephoneFill } from "react-icons/bs";
 import { AiTwotoneMail } from "react-icons/ai";
 
+import PropTypes from 'prop-types';
+
 
 const Card = ({ service }) => {
   const { id,eventType, venue, date, time, location, image, contactPhone, contactEmail } = service;
@@ -17,7 +19,7 @@ const Card = ({ service }) => {
         <h2 className="text-5xl font-bold my-8 text-center ">
         {eventType}
       </h2>
-        <div className="flex gap-12 ">
+        <div className="flex-row md:flex-row lg:flex gap-12 ">
           <div className="space-y-4">
             
             <div className="flex items-center">
@@ -25,7 +27,7 @@ const Card = ({ service }) => {
               <p className="text-xl font-bold">{venue} </p>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex items-center gap-4">
               <BsCalendarDateFill className="text-2xl"></BsCalendarDateFill>
               <p className="text-xl font-bold">{date}</p>
             </div>
@@ -35,7 +37,7 @@ const Card = ({ service }) => {
               <p className="text-xl font-bold">{contactEmail}</p>
             </div>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 mt-8 md:mt-0 lg:mt-0">
             <div className="flex items-center">
               <HiLocationMarker className="text-2xl"></HiLocationMarker>
               <p className="text-xl font-bold">{location}</p>
@@ -55,7 +57,7 @@ const Card = ({ service }) => {
         </div>
         <div className="flex justify-center  mt-8">
       <Link to={`/service/${id}`}>
-            <button className="btn bg-gray-400 px-60 py-3 rounded-lg">Details</button>
+            <button className="btn bg-gray-400 px-12 lg:px-60 py-3 rounded-lg">Details</button>
             </Link>
       </div>
       
@@ -64,5 +66,9 @@ const Card = ({ service }) => {
     </div>
   );
 };
+
+Card.propTypes = {
+  service: PropTypes.object
+}
 
 export default Card;
