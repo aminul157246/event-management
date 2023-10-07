@@ -1,0 +1,74 @@
+[
+    {
+      "id": "1",
+      "eventType": "Wedding",
+      "venue": "Elegant Garden Estates",
+      "date": "2024-06-15",
+      "time": "4:00 PM - 10:00 PM",
+      "location": "123 Wedding Lane, Blissville",
+      "description": "Experience the ultimate wedding celebration at Sunset Haven Community Hall, where we provide the perfect venue for your special day. Our versatile and spacious hall, conveniently located in the heart of Sunset Haven Community Hall, Dhaka, Bangladesh, offers endless possibilities for creating a memorable wedding party, whether you're planning an elegant soirée, a themed extravaganza, or a casual gathering. With ample seating, a fully-equipped kitchen, and amenities for guests of all ages, we're here to make your vision a reality. Our experienced event staff will ensure a smooth and stress-free experience, while our commitment to cleanliness and safety provides a secure and welcoming environment. Contact us today to book your unforgettable wedding party at Sunset Haven Community Hall.",
+      "contactEmail": "weddings@example.com",
+      "contactPhone": "+1-555-123-4567",
+      "image": "https://i.ibb.co/0MjxtK0/bia.jpg"
+    },
+    {
+      "id": "2",
+      "eventType": "Birthday Party",
+      "venue": "Party Palace",
+      "date": "2024-03-08",
+      "time": "2:00 PM - 6:00 PM",
+      "location": "456 Celebration Street, Joyville",
+      "description": "Experience the ultimate birthday celebration at Sunset Haven Community Hall, where we provide the perfect venue for your special day. Our versatile and spacious hall, conveniently located in the heart of Sunset Haven Community Hall, Dhaka, Bangladesh, offers endless possibilities for creating a memorable birthday party, whether you're planning an elegant soirée, a themed extravaganza, or a casual gathering. With ample seating, a fully-equipped kitchen, and amenities for guests of all ages, we're here to make your vision a reality. Our experienced event staff will ensure a smooth and stress-free experience, while our commitment to cleanliness and safety provides a secure and welcoming environment. Contact us today to book your unforgettable birthday party at Sunset Haven Community Hall.",
+      "contactEmail": "birthdays@example.com",
+      "contactPhone": "+1-555-987-6543",
+      "image": "https://i.ibb.co/TcfXDtP/b.webp"
+    },
+    {
+      "id": "3",
+      "eventType": "Anniversary Celebration",
+      "venue": "Romantic Harborview Restaurant",
+      "date": "2024-09-22",
+      "time": "6:30 PM - 11:00 PM",
+      "location": "789 Love Lane, Serenity Bay",
+      "description": "Experience the ultimate Anniversary celebration at Sunset Haven Community Hall, where we provide the perfect venue for your special day. Our versatile and spacious hall, conveniently located in the heart of Sunset Haven Community Hall, Dhaka, Bangladesh, offers endless possibilities for creating a memorable Anniversary party, whether you're planning an elegant soirée, a themed extravaganza, or a casual gathering. With ample seating, a fully-equipped kitchen, and amenities for guests of all ages, we're here to make your vision a reality. Our experienced event staff will ensure a smooth and stress-free experience, while our commitment to cleanliness and safety provides a secure and welcoming environment. Contact us today to book your unforgettable Anniversary party at Sunset Haven Community Hall.",
+      "contactEmail": "anniversaries@example.com",
+      "contactPhone": "+1-555-789-0123",
+      "image": "https://i.ibb.co/JQB951p/anneversary-pic.jpg"
+    },
+    {
+      "id": "4",
+      "eventType": "Engagement Party",
+      "venue": "Chic Loft Event Space",
+      "date": "2024-04-30",
+      "time": "7:00 PM - 12:00 AM",
+      "location": "101 Sparkling Avenue, Romanceville",
+      "description": "Experience the ultimate Engagement Party celebration at Sunset Haven Community Hall, where we provide the perfect venue for your special day. Our versatile and spacious hall, conveniently located in the heart of Sunset Haven Community Hall, Dhaka, Bangladesh, offers endless possibilities for creating a memorable Engagement Party party, whether you're planning an elegant soirée, a themed extravaganza, or a casual gathering. With ample seating, a fully-equipped kitchen, and amenities for guests of all ages, we're here to make your vision a reality. Our experienced event staff will ensure a smooth and stress-free experience, while our commitment to cleanliness and safety provides a secure and welcoming environment. Contact us today to book your unforgettable Engagement Party party at Sunset Haven Community Hall..",
+      "contactEmail": "engagements@example.com",
+      "contactPhone": "+1-555-234-5678",
+      "image": "https://i.ibb.co/XDDYsZh/w.jpg"
+    },
+    {
+      "id": "5",
+      "eventType": "Retirement Party",
+      "venue": "Harmony Banquet Hall",
+      "date": "2024-07-10",
+      "time": "3:00 PM - 7:00 PM",
+      "location": "567 Tranquil Road, Farewell City",
+      "description": "Experience the ultimate Retirement celebration at Sunset Haven Community Hall, where we provide the perfect venue for your special day. Our versatile and spacious hall, conveniently located in the heart of Sunset Haven Community Hall, Dhaka, Bangladesh, offers endless possibilities for creating a memorable Retirement party, whether you're planning an elegant soirée, a themed extravaganza, or a casual gathering. With ample seating, a fully-equipped kitchen, and amenities for guests of all ages, we're here to make your vision a reality. Our experienced event staff will ensure a smooth and stress-free experience, while our commitment to cleanliness and safety provides a secure and welcoming environment. Contact us today to book your unforgettable Retirement party at Sunset Haven Community Hall..",
+      "contactEmail": "retirements@example.com",
+      "contactPhone": "+1-555-345-6789",
+      "image": "https://i.ibb.co/QN2bCks/ret-p.webp"
+    },
+    {
+      "id": "6",
+      "eventType": "Baby Shower",
+      "venue": "Cozy Café and Tea Room",
+      "date": "2024-02-12",
+      "time": "1:00 PM - 3:30 PM",
+      "location": "789 Bundle of Joy Street, Babyland",
+      "description": "Experience the ultimate Baby Shower celebration at Sunset Haven Community Hall, where we provide the perfect venue for your special day. Our versatile and spacious hall, conveniently located in the heart of Sunset Haven Community Hall, Dhaka, Bangladesh, offers endless possibilities for creating a memorable Baby Shower party, whether you're planning an elegant soirée, a themed extravaganza, or a casual gathering. With ample seating, a fully-equipped kitchen, and amenities for guests of all ages, we're here to make your vision a reality. Our experienced event staff will ensure a smooth and stress-free experience, while our commitment to cleanliness and safety provides a secure and welcoming environment. Contact us today to book your unforgettable Baby Shower party at Sunset Haven Community Hall.",
+      "contactEmail": "babyshower@example.com",
+      "contactPhone": "+1-555-456-7890",
+      "image": "https://i.ibb.co/n3tVBPM/bs.jpg"
+    }
+  ]
