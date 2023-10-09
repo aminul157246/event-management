@@ -16,9 +16,7 @@ const Gallery = () => {
   <img className="w-[350px] h-[300px] hover:opacity-50 hover:" src={gallery1}  />
 <img className="w-[350px] h-[300px]" src={gallery2}  />
 <img className="w-[350px] h-[300px]" src={gallery3} />
-
 <img className="w-[350px] h-[300px]" src={gallery4}  />
-
 </div>
 <div className='flex-row md:flex-col lg:flex-col justify-center items-center mt-4 gap-4 '>
 <h2 className="text-2xl font-bold  text-center">See Our Best Events <span className='text-yellow-400'>Gallery !</span></h2>

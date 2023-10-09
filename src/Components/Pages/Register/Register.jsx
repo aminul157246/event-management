@@ -66,25 +66,25 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Full Name</span>
                                 </label>
-                                <input type="text" placeholder="Full name" className="input input-bordered" name='name' />
+                                <input type="text" required placeholder="Full name" className="input input-bordered" name='name' />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="text" placeholder="email" className="input input-bordered" name='email' />
+                                <input type="text" required placeholder="email" className="input input-bordered" name='email' />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Image Url</span>
                                 </label>
-                                <input type="text" placeholder="image url" className="input input-bordered" name='img' />
+                                <input type="text" required placeholder="image url" className="input input-bordered" name='img' />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
-                                </label>
-                                <input type="text" placeholder="password" className="input input-bordered" name='password' />
+                                </label> 
+                                <input type="text" required placeholder="password" className="input input-bordered" name='password' />
                             </div>
                             <div className="form-control mt-6 p-0">
                                 <button className="btn btn-neutral" type='submit'>Register</button>
@@ -92,8 +92,10 @@ const Register = () => {
                             <label className="label">
                                 Have an account? <Link to="/login" className="label-text-alt link link-hover">Please Login</Link>
                             </label>
-                            <LoginWithGoogle></LoginWithGoogle>
                         </form>
+                            <div className='flex justify-center mb-4'>
+                            <LoginWithGoogle ></LoginWithGoogle>
+                            </div>
                     </div>
                 </div>
             </div>

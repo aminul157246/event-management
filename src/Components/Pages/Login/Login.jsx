@@ -33,45 +33,13 @@ const Login = () => {
             navigate(location?.state ? location.state : "/")
 
             
-          })
-          .catch((error) => {
+        })
+        .catch((error) => {
             console.log(error.message); 
             toast.error('Login failed')
 
-          });
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-//         // validation 
-//         if(password.length<6){
-//             toast.error('Please give at least 6 character');
-//         }
-    
-//         // create a new user 
-//         signIn(email, password)
-//         .then(()=> {
-//             toast.success('login successfully')
-//             navigate('/')
-//         })
-
-// .catch(error => toast.error(error.message))
-    
-    
-        
+        });
     }
-
-  
     return (
       <>
       <div className="hero min-h-screen bg-base-200">
@@ -100,8 +68,10 @@ const Login = () => {
                       <label className="label">
                            Do not have an account? <Link to="/register" className="text-blue-700 underline">create an account</Link>
                       </label>
-                      <LoginWithGoogle></LoginWithGoogle>
                   </form>
+                  <div className='flex justify-center mb-4'>
+                            <LoginWithGoogle ></LoginWithGoogle>
+                            </div>
               
           </div>
       </div>

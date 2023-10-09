@@ -5,11 +5,7 @@ const HolidayParties = () => {
       <h2 className="my-6 text-5xl font-bold text-center">Holiday Parties</h2>
       <div className="flex justify-center items-center">
         <img src={holidayImg} alt="" />
-      </div>
-
-
-
-      
+      </div>    
 
       <h2 className='text-3xl font-bold text-center my-8'>Why Choose our Party Center for Your Holiday party:</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto gap-8">
