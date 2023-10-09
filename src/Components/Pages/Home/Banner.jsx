@@ -1,37 +1,35 @@
-
+import banner from "../../../assets/images/banner.jpg";
 const Banner = () => {
-    return (
-        <div className="my-6 carousel w-full">
-        <div id="slide1" className="carousel-item relative w-full">
-          <img src="https://i.ibb.co/0MjxtK0/bia.jpg" className="w-3/4 mx-auto h-[70vh]" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">❮</a> 
-            <a href="#slide2" className="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide2" className="carousel-item relative w-full">
-          <img src="https://i.ibb.co/TcfXDtP/b.webp" className="w-3/4 mx-auto h-[70vh]" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">❮</a> 
-            <a href="#slide3" className="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide3" className="carousel-item relative w-full">
-          <img src="https://i.ibb.co/JQB951p/anneversary-pic.jpg" className="w-3/4 mx-auto h-[70vh]" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">❮</a> 
-            <a href="#slide4" className="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide4" className="carousel-item relative w-full">
-          <img src="https://i.ibb.co/XDDYsZh/w.jpg" className="w-3/4 mx-auto h-[70vh]" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">❮</a> 
-            <a href="#slide1" className="btn btn-circle">❯</a>
-          </div>
+  return (
+    <>
+      <div
+        className="relative h-[60vh] md:h-[60vh] lg:h-[70vh]" 
+        style={{
+          backgroundImage: `url(${banner})`, 
+        }}
+      >
+        <div
+          className="absolute inset-0 bg-black opacity-60" 
+        ></div>
+        <div className="absolute top-16 md:top-24 lg:top-32 left-10 md:left-24 lg:left-96 z-10 space-y-3">
+          <h2 className="text-2xl lg:text-6xl font-bold text-white font-Vidaloka">
+            
+            <span className="text-yellow-400">We created</span> <br />
+            you <br />
+            celebrate
+          </h2>
+          <p className="text-white">
+            Planning a Wedding, Proposal or Event in our busy city is not so
+            easy,
+            <br /> and its takes skills and time to make it all look easy going{" "}
+          </p>
+          <button className="bg-red-400 text-white rounded-3xl px-4 py-2">
+            Online request
+          </button>
         </div>
       </div>
-    );
+    </>
+  );
 };
 
 export default Banner;

@@ -5,23 +5,16 @@ import { useContext } from "react";
 
 const Header = () => {
 
-
   const { user, logOut } = useContext(AuthContext);
 
-
-  const handleLogOut = () => {
-    logOut()
-    .then(() => console.log('user logged out successfully'))
-    .catch(error => console.log(error))
-  }
   
 
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar  ">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="  lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -39,60 +32,93 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3  p-2  rounded-3xl w-52"
             >
               <li>
-                <NavLink to={"/"}>Home</NavLink>
+                <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-red-500" : ""
+  } to={"/"}>Home</NavLink>
               </li>
               <li>
-                <NavLink to={"/login"}>Login </NavLink>
+                <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-red-500" : ""
+  } to={"/login"}>Login </NavLink>
               </li>
               <li>
-                <NavLink to={"/register"}>Register</NavLink>
+                <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-red-500" : ""
+  } to={"/register"}>Register</NavLink>
               </li>
               <li>
-                <NavLink to={"/familyReunions"}>Family Reunions</NavLink>
+                <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-red-500" : ""
+  } to={"/familyReunions"}>Family Reunions</NavLink>
               </li>
               <li>
-                <NavLink to={"/holidayParty"}>Holiday Party</NavLink>
+                <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-red-500" : ""
+  } to={"/holidayParty"}>Holiday Party</NavLink>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Social Events</a>
+          <a className="normal-case text-xl">Social Events</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <NavLink  to={"/"}>Home</NavLink>
+              <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-red-400" : ""
+  }  to={"/"}>Home</NavLink>
             </li>
             <li>
-              <NavLink to={"/login"}>Login </NavLink>
+              <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-red-500" : ""
+  } to={"/login"}>Login </NavLink>
             </li>
             <li>
-              <NavLink to={"/register"}>Register</NavLink>
+              <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-red-500" : ""
+  } to={"/register"}>Register</NavLink>
             </li>
             <li>
-                <NavLink to={"/familyReunions"}>Family Reunions</NavLink>
+                <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-red-500" : ""
+  } to={"/familyReunions"}>Family Reunions</NavLink>
               </li>
               <li>
-                <NavLink to={"/holidayParty"}>Holiday Party</NavLink>
+                <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-red-500" : ""
+  } to={"/holidayParty"}>Holiday Party</NavLink>
               </li>
           </ul>
         </div>
         <div className="navbar-end">
-          {user ? 
-            <>
-              <p>{user.email} </p>
-              <Link>
-                <button onClick={handleLogOut} className="btn">
-                  Log out
-                </button>
-              </Link>
-            </>
-           : 
-            <Link to="/login">Login</Link>
-          }
-        </div>
+                    {
+                        user ? <div className="dropdown dropdown-end">
+                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img src={user.photoURL} alt='' />
+                                </div>
+                            </label>
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li>
+                                    <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
+
+                                </li>
+                                <li>
+                                    <button className="btn btn-sm  btn-ghost"
+                                        onClick={logOut}
+                                    >Logout</button>
+
+                                </li>
+                            </ul>
+                        </div>
+                            :
+                            <Link to='/login'>
+                                <button className="btn btn-sm  btn-ghost">Login</button>
+                            </Link>
+                    }
+                </div>
       </div>
     </div>
   );

@@ -7,6 +7,9 @@ export default {
 
   theme: {
     extend: {},
+    fontFamily : {
+      Vidaloka : "'Vidaloka', serif"
+    }
   },
   plugins: [require("daisyui")],
 }

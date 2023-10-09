@@ -1,6 +1,7 @@
 [
     {
       "id": "1",
+      "price" : "500$",
       "eventType": "Wedding",
       "venue": "Elegant Garden Estates",
       "date": "2024-06-15",
@@ -13,6 +14,7 @@
     },
     {
       "id": "2",
+      "price" : "500$",
       "eventType": "Birthday Party",
       "venue": "Party Palace",
       "date": "2024-03-08",
@@ -25,6 +27,7 @@
     },
     {
       "id": "3",
+      "price" : "500$",
       "eventType": "Anniversary Celebration",
       "venue": "Romantic Harborview Restaurant",
       "date": "2024-09-22",
@@ -37,6 +40,7 @@
     },
     {
       "id": "4",
+      "price" : "500$",
       "eventType": "Engagement Party",
       "venue": "Chic Loft Event Space",
       "date": "2024-04-30",
@@ -49,6 +53,7 @@
     },
     {
       "id": "5",
+      "price" : "500$",
       "eventType": "Retirement Party",
       "venue": "Harmony Banquet Hall",
       "date": "2024-07-10",
@@ -61,6 +66,7 @@
     },
     {
       "id": "6",
+      "price" : "500$",
       "eventType": "Baby Shower",
       "venue": "Cozy Café and Tea Room",
       "date": "2024-02-12",
