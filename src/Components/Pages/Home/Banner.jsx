@@ -13,7 +13,7 @@ const Banner = () => {
         <div className=''>
           <img className='ml-96' src={flower} alt="" />
           <div className=' mt-8'>
-          <img className='w-36'  src={ring} alt="" />
+          <img className='ml-16 w-36'  src={ring} alt="" />
           <h1 className='ml-16 mt-4 text-6xl font-bold'>Creating <br /> <span className='mt-2'>Unforgettable</span> <br /> <span className='mt-2'>Moments</span></h1>
           <p className='ml-16 mt-4 text-xl'>We specialize in creating unforgettable experiences that exceed your expectations</p>
           <button className='ml-16 bg-[#F4A492] px-5 text-xl rounded-3xl py-3  mt-4'>Make Reservation</button>

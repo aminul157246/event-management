@@ -13,6 +13,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import About from "./About";
 import Service from "./Service";
 import Count from "./Count";
+import Feature from "./Feature";
 // ..
 AOS.init();
 
@@ -41,8 +42,10 @@ const Home = () => {
 <Service/>
       <Gallery></Gallery>
       <Count/>
+      <Feature/>
       <Testimonial></Testimonial>
-      <OnlineRequest></OnlineRequest>
+
+      {/* <OnlineRequest></OnlineRequest> */}
       <Map></Map>
     </div>
   );
