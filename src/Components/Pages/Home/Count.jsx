@@ -24,8 +24,8 @@ const Count = () => {
         <div data-aos="fade-up" className="  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-2xl md:text-4xl lg:text-5xl    shadow-lg bg-blue-50 mx-12 py-12 mt-12">
 
             <div >
-                <img className='bg-[#9ACCC9] p-4 rounded-lg w-24 mx-auto' src={count1} alt="" />
-                <div className="flex  font-bold justify-center font-textStyle mt-4 ">
+                <img className='hover:bg-[#F4A492] bg-[#9ACCC9] p-4 rounded-lg w-24 mx-auto' src={count1} alt="" />
+                <div className="flex  font-bold justify-center font-textStyle text-[#9ACCC9] hover:text-[#F4A492] mt-4 ">
                     <h3 >$</h3>
                     <CountUp end={980} />
                     <h3>k</h3>
@@ -35,8 +35,8 @@ const Count = () => {
 
 
            <div >
-           <img className='bg-[#9ACCC9] p-4 rounded-lg w-24 mx-auto' src={count2} alt="" />
-           <div className='flex font-bold justify-center font-textStyle mt-4'>
+           <img className='hover:bg-[#F4A492] bg-[#9ACCC9] p-4 rounded-lg w-24 mx-auto' src={count2} alt="" />
+           <div className='flex font-bold justify-center font-textStyle text-[#9ACCC9] hover:text-[#F4A492] mt-4'>
                 <CountUp end={24} />
             </div>
                 <h3 className='text-sm lg:text-xl mt-3 text-center'>Properties sold</h3>
@@ -44,8 +44,8 @@ const Count = () => {
            </div>
 
             <div >
-            <img className='bg-[#9ACCC9] p-4 rounded-lg w-24 mx-auto' src={count3} alt="" />
-                <div className="flex font-bold justify-center font-textStyle mt-4">
+            <img className='hover:bg-[#F4A492] bg-[#9ACCC9] p-4 rounded-lg w-24 mx-auto' src={count3} alt="" />
+                <div className="flex font-bold text-[#9ACCC9] hover:text-[#F4A492] justify-center font-textStyle mt-4">
                     <h3 >$</h3>
                     <CountUp end={680} />
                     <h3>k</h3>
@@ -55,11 +55,11 @@ const Count = () => {
 
 
           <div >
-          <img className='bg-[#9ACCC9] p-4 rounded-lg w-24 mx-auto' src={count4} alt="" />
-          <div className='flex font-bold justify-center font-textStyle mt-4'>
+          <img className='hover:bg-[#F4A492] bg-[#9ACCC9] p-4 rounded-lg w-24 mx-auto' src={count4} alt="" />
+          <div className='flex font-bold text-[#9ACCC9] hover:text-[#F4A492] justify-center font-textStyle mt-4'>
                 <CountUp end={95} />
             </div>
-                <h3 className='text-center text-sm lg:text-xl mt-3'>Properties leased</h3>
+                <h3 className='text-center  text-sm lg:text-xl mt-3'>Properties leased</h3>
 
           </div>
 
