@@ -10,12 +10,12 @@ import Home from './Components/Pages/Home/Home';
 import Login from './Components/Pages/Login/Login';
 import Register from './Components/Pages/Register/Register';
 import Root from './Root/Root';
-import Details from './Components/Pages/Details/Details';
 import AuthProvider from './AuthProvider/AuthProvider';
-import PrivateRoute from './PrivateRoute/PrivateRoute';
-import FamilyReunions from './Components/Pages/FamilyReunions/FamilyReunions';
-import HolidayParties from './Components/Pages/Holiday Parties/HolidayParties';
 import ErrorPage from './Error/ErrorPage';
+import Service from './Components/Pages/Service/Service';
+import About from './Components/Pages/About/About';
+import Contact from './Components/Pages/Contact/Contact';
+
 
 
 
@@ -30,29 +30,33 @@ const router = createBrowserRouter([
         element : <Home></Home>,
         loader : () => fetch('/service.json') 
       },
-      {
-        path : '/service/:id',
-        element : <PrivateRoute>
-          <Details></Details>
-        </PrivateRoute>,
-        loader : () => fetch('/service.json') 
-      },
+      // {
+      //   path : '/service/:id',
+      //   element : <PrivateRoute>
+      //     <Details></Details>
+      //   </PrivateRoute>,
+      //   loader : () => fetch('/service.json') 
+      // },
       {
         path : '/login',
         element : <Login></Login>
       },
       {
-        path : '/familyReunions',
-        element : <PrivateRoute><FamilyReunions></FamilyReunions></PrivateRoute>
+        path : '/service',
+        element :  <Service/>
       },
       {
         path : '/register',
         element : <Register></Register>
       },
       {
-        path : '/holidayParty',
-        element : <PrivateRoute><HolidayParties></HolidayParties></PrivateRoute>
+        path : '/contact',
+        element : <Contact/>
       },
+      {
+        path : '/about', 
+        element : <About/>
+      }
     ]
   },
 ])

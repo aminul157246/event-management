@@ -5,12 +5,14 @@ import Banner from "./Banner";
 import Gallery from "./Gallery";
 import Testimonial from "./Testimonial";
 import OnlineRequest from "./OnlineRequest";
-import Contact from "./Contact";
 import Map from "./Map";
 import Planning from "./Planning";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import About from "./About";
+import Service from "./Service";
+import Count from "./Count";
 // ..
 AOS.init();
 
@@ -20,7 +22,7 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <Planning></Planning>
+      {/* <Planning></Planning>
       <div className="mt-16 mb-12 text-center">
         <h3 className="text-3xl font-bold font-Vidaloka">
           Its simple. You have an event to plan and <br />
@@ -32,12 +34,15 @@ const Home = () => {
         {services.map((service) => (
           <Card key={service.id} service={service} data-aos="fade-left"></Card>
         ))}
-      </div>
+      </div> */}
 
+
+<About/>
+<Service/>
       <Gallery></Gallery>
+      <Count/>
       <Testimonial></Testimonial>
       <OnlineRequest></OnlineRequest>
-      <Contact></Contact>
       <Map></Map>
     </div>
   );
