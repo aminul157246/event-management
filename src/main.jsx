@@ -31,6 +31,9 @@ import Contact from './Components/Pages/Contact/Contact';
 import Events from './Components/Pages/Events/Events';
 import Venues from './Components/Pages/Events/Venues/Venues';
 import Dress from './Components/Pages/Events/Dress/Dress';
+import Photographer from './Components/Pages/Events/Photographer/Photographer'
+import Catering from './Components/Pages/Events/Catering/Catering'
+import Entertainment from './Components/Pages/Events/Entertainment/Entertainment'
 
 
 
@@ -84,6 +87,18 @@ const router = createBrowserRouter([
       {
         path : '/dress', 
         element : <Dress/>
+      },
+      {
+        path : '/photographer', 
+        element : <Photographer/>
+      },
+      {
+        path : '/catering', 
+        element : <Catering/>
+      },
+      {
+        path : '/entertainment', 
+        element : <Entertainment/>
       },
 
     ]

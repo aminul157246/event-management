@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Capture Bliss Photography",
+      "location": "123 Main Street, Cityville",
+      "style": "Fine Art",
+      "description": "Specializing in fine art photography, we capture the essence of your special day with timeless and elegant images.",
+      "price": "$2000",
+      "portfolio": "https://i.ibb.co/QH5n6Jd/photo-4.jpg"
+    },
+    {
+      "name": "Eternal Moments Studios",
+      "location": "456 Oak Avenue, Townsville",
+      "style": "Photojournalistic",
+      "description": "With a photojournalistic approach, we document your wedding day as it unfolds, capturing candid moments and genuine emotions.",
+      "price": "$2500",
+      "portfolio": "https://i.ibb.co/8YC93Yb/photo-3.jpg"
+    },
+    {
+      "name": "Dreamscape Photography",
+      "location": "789 Pine Road, Villagetown",
+      "style": "Artistic",
+      "description": "We specialize in artistic wedding photography, creating visually stunning images that reflect your unique love story and personalities.",
+      "price": "$1800",
+      "portfolio": "https://i.ibb.co/MVcKNt5/photo-2.jpg"
+    },
+    {
+      "name": "Golden Hour Photography",
+      "location": "101 Beachfront Avenue, Beachtown",
+      "style": "Natural Light",
+      "description": "As natural light enthusiasts, we harness the beauty of golden hour to capture soft, romantic images that showcase the beauty of your love.",
+      "price": "$2200",
+      "portfolio": "https://i.ibb.co/MVcKNt5/photo-2.jpg"
+    },
+    {
+      "name": "Enchanted Memories Photography",
+      "location": "222 Heritage Lane, Oldtown",
+      "style": "Classic",
+      "description": "With a classic and timeless approach, we create beautifully composed images that will be cherished for generations to come.",
+      "price": "$1900",
+      "portfolio": "https://i.ibb.co/strVrkb/photo-1.jpg"
+    },
+    {
+      "name": "Pure Emotion Photography",
+      "location": "333 Sunset Boulevard, Hillside",
+      "style": "Emotive",
+      "description": "We specialize in capturing the raw and authentic emotions of your wedding day, creating images that evoke powerful feelings and memories.",
+      "price": "$2300",
+      "portfolio": "https://i.ibb.co/zRwG9sk/photo-5.jpg"
+    },
+    {
+      "name": "Celestial Moments Photography",
+      "location": "444 Starlight Drive, Skyville",
+      "style": "Whimsical",
+      "description": "With a whimsical and ethereal style, we create dreamy images that transport you to a world of magic and romance.",
+      "price": "$2100",
+      "portfolio": "https://i.ibb.co/QH5n6Jd/photo-4.jpg"
+    },
+    {
+      "name": "Vintage Romance Photography",
+      "location": "555 Rose Lane, Rosetown",
+      "style": "Vintage",
+      "description": "Specializing in vintage-inspired photography, we capture the nostalgia and romance of eras past, creating timeless images with a touch of nostalgia.",
+      "price": "$2400",
+      "portfolio": "https://i.ibb.co/8YC93Yb/photo-3.jpg"
+    }
+]
