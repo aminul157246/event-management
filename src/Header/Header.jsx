@@ -16,6 +16,12 @@ const Header = () => {
         style={{ background: 'none' }} to={"/"}>Home</NavLink>
     </li>
     
+    <li>
+      <NavLink className={({ isActive, isPending }) =>
+        isPending ? "pending" : isActive ? "font-bold" : ""}
+        style={{ background: 'none' }} to={"/event"}>Event</NavLink>
+    </li>
+    
     
     <li>
       <NavLink className={({ isActive, isPending }) =>

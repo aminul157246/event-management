@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Garden Oasis",
+      "location": "321 Blossom Street, Greenvale",
+      "capacity": "180 guests",
+      "description": "A serene garden oasis with blooming flowers and tranquil ponds, offering a peaceful atmosphere for outdoor weddings.",
+      "image": "https://i.ibb.co/ft51tnq/venue.jpg"
+    },
+    {
+      "name": "Mountain Lodge",
+      "location": "543 Summit Road, Mountainville",
+      "capacity": "120 guests",
+      "description": "A cozy mountain lodge nestled in the heart of the wilderness, providing a rustic and charming setting for mountain weddings.",
+      "image": "https://i.ibb.co/2sY2tWD/venue5.jpg"
+    },
+    {
+      "name": "Urban Loft",
+      "location": "777 Loft Avenue, Cityscape",
+      "capacity": "220 guests",
+      "description": "A trendy urban loft featuring industrial-chic decor and panoramic city views, perfect for modern and stylish weddings.",
+      "image": "https://i.ibb.co/CQkp6w6/venue4.jpg"
+    },
+    {
+      "name": "Vineyard Estate",
+      "location": "888 Vineyard Lane, Winetown",
+      "capacity": "180 guests",
+      "description": "A picturesque vineyard estate surrounded by rolling hills and vineyards, offering a romantic and elegant backdrop for wine-themed weddings.",
+      "image": "https://i.ibb.co/KjbY3Q3/venue3.jpg"
+    },
+    {
+      "name": "Tropical Paradise",
+      "location": "999 Palm Avenue, Palm Beach",
+      "capacity": "250 guests",
+      "description": "A tropical paradise resort with palm-fringed beaches, lush gardens, and crystal-clear waters, creating an idyllic setting for beach weddings.",
+      "image": "https://i.ibb.co/dthmJPD/venue2.jpg"
+    }
+  ]
+  

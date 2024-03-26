@@ -2,6 +2,19 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
+
+import {
+
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+
+
+const queryClient = new QueryClient()
+
+
+
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,6 +28,9 @@ import ErrorPage from './Error/ErrorPage';
 import Service from './Components/Pages/Service/Service';
 import About from './Components/Pages/About/About';
 import Contact from './Components/Pages/Contact/Contact';
+import Events from './Components/Pages/Events/Events';
+import Venues from './Components/Pages/Events/Venues/Venues';
+import Dress from './Components/Pages/Events/Dress/Dress';
 
 
 
@@ -56,14 +72,29 @@ const router = createBrowserRouter([
       {
         path : '/about', 
         element : <About/>
-      }
+      },
+      {
+        path : '/event', 
+        element : <Events/>
+      },
+      {
+        path : '/venues', 
+        element : <Venues/>
+      },
+      {
+        path : '/dress', 
+        element : <Dress/>
+      },
+
     ]
   },
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <QueryClientProvider client={queryClient}>
     <AuthProvider>
     <RouterProvider router={router} />
     </AuthProvider>
+    </QueryClientProvider>
   </React.StrictMode>
 )

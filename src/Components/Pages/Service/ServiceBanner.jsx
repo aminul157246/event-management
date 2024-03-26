@@ -2,16 +2,16 @@ import { NavLink } from 'react-router-dom';
 import bg from '../../../assets/images/bg.jpg'
 
 const ServiceBanner = () => {
-    return (
-        <div>
-              <div
+  return (
+    <div>
+      <div
         className="relative h-[30vh] md:h-[30vh] lg:h-[40vh]"
         style={{
           backgroundImage: `url(${bg})`, backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover'
         }}
       >
-         
+
         <div className="absolute top-12   left-[600px]  z-10 space-y-3">
           <h2 className="text-2xl    lg:text-6xl  font-bold text-black font-Vidaloka">
 
@@ -29,8 +29,8 @@ const ServiceBanner = () => {
         </div>
       </div>
 
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ServiceBanner;

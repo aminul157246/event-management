@@ -1,0 +1,44 @@
+[
+    {
+      "brand": "Elegance Couture",
+      "style": "Ball Gown",
+      "color": "White",
+      "description": "A stunning ball gown with intricate lace detailing, a sweetheart neckline, and a voluminous tulle skirt, exuding timeless elegance.",
+      "price": "$1500",
+      "image": "https://i.ibb.co/bF7BQZ4/dress5.jpg"
+    },
+    {
+      "brand": "Romantic Bridal",
+      "style": "Mermaid",
+      "color": "Ivory",
+      "description": "A glamorous mermaid-style dress featuring delicate beading, a fitted bodice, and a dramatic trumpet skirt, perfect for the modern bride.",
+      "price": "$1800",
+      "image": "https://i.ibb.co/JQm4mRL/dress4.jpg"
+    },
+    {
+      "brand": "Vintage Charm",
+      "style": "A-Line",
+      "color": "Champagne",
+      "description": "An enchanting A-line gown with vintage-inspired lace sleeves, a cinched waist, and a flowing chiffon skirt, evoking classic romance.",
+      "price": "$1200",
+      "image": "https://i.ibb.co/yRwrQKc/dress3.jpg"
+    },
+    {
+      "brand": "Modern Elegance",
+      "style": "Sheath",
+      "color": "Blush",
+      "description": "A chic sheath dress featuring a minimalist silhouette, spaghetti straps, and a sleek satin finish, embodying contemporary sophistication.",
+      "price": "$1600",
+      "image": "https://i.ibb.co/C6JDTXC/dress2.jpg"
+    },
+    {
+      "brand": "Bohemian Dream",
+      "style": "Empire Waist",
+      "color": "Ivory",
+      "description": "A bohemian-inspired dress with an empire waistline, flowing chiffon layers, and delicate floral appliques, epitomizing effortless beauty.",
+      "price": "$1400",
+      "image": "https://i.ibb.co/Y3fpM5g/dress1.webp"
+    }
+    
+  ]
+  
