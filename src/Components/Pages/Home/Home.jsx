@@ -14,6 +14,7 @@ import About from "./About";
 import Service from "./Service";
 import Count from "./Count";
 import Feature from "./Feature";
+import Reservation from "./Reservation";
 // ..
 AOS.init();
 
@@ -43,6 +44,7 @@ const Home = () => {
       <Gallery></Gallery>
       <Count/>
       <Feature/>
+      <Reservation/>
       <Testimonial></Testimonial>
 
       {/* <OnlineRequest></OnlineRequest> */}

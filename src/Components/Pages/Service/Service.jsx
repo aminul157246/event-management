@@ -1,11 +1,16 @@
-import React from 'react';
+import Category from "./Category";
+import Plan from "./Plan";
+import ServiceBanner from "./ServiceBanner";
+
 
 const Service = () => {
     return (
-        <div>
-            Service
-Service
-        </div>
+<div>
+<ServiceBanner/>
+<Plan/>
+        <Category/>
+
+</div>
     );
 };
 
