@@ -4,7 +4,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 const Dashboard = () => {
     return (
         <div className='flex'>
-            <div className='w-1/4 bg-red-200'>
+            <div className='w-1/4 bg-red-200 list-none p-12 space-y-3'>
             <li className="transition-transform duration-300 ease-in-out transform hover:translate-x-1">
                             <NavLink className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "font-bold" : ""}
