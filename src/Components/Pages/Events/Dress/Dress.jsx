@@ -1,9 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
+import Dres from './Dres';
 
 const Dress = () => {
 
-    const {data : dress = []} = useQuery({
+    const {isLoading  , data : dress = []} = useQuery({
         queryKey : ['dress'], 
         queryFn : async () => {
             const res =  await axios.get('http://localhost:3000/dress')
@@ -14,28 +15,20 @@ const Dress = () => {
 
     // console.log(dress);
 
+    if (isLoading) {
+        return <>
+            <span className="loading loading-ball loading-xs"></span>
+            <span className="loading loading-ball loading-sm"></span>
+            <span className="loading loading-ball loading-md"></span>
+            <span className="loading loading-ball loading-lg"></span>
+        </>
+    }
+
 
     return (
-        <div className='grid grid-cols-3 mx-12'>
+        <div className='grid gap-8 grid-cols-3 mt-12 mx-12'>
             {
-                dress.map(item => <div key={item._id}>
-
-
-                    <div className="card h-[500px] w-96 bg-base-100 shadow-xl">
-                        <figure><img src={item.image} alt="Shoes" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">{item.brand}</h2>
-                            <p>Price : {item.price}</p>
-                            <p>Color : {item.color}</p>
-                            <p>{item.description}</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-accent">Book</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>)
+                dress.map(item => <Dres item={item} key={item._id}></Dres>)
             }
         </div>
     );

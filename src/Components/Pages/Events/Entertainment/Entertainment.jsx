@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import useAxiosPublic from '../../../../hooks/useAxiosPublic';
+import Enter from './Enter';
 
 const Entertainment = () => {
 
@@ -7,7 +8,7 @@ const Entertainment = () => {
    const axiosPublic = useAxiosPublic()
 
 
-        const {data : entertainments = []} = useQuery({
+        const {isLoading , data : entertainments = []} = useQuery({
             queryKey : ['entertainment'], 
             queryFn : async () => {
                 const res =  await axiosPublic.get('/entertainment')
@@ -15,29 +16,19 @@ const Entertainment = () => {
                 return res.data
             }
         })
-
+        if (isLoading) {
+            return <>
+                <span className="loading loading-ball loading-xs"></span>
+                <span className="loading loading-ball loading-sm"></span>
+                <span className="loading loading-ball loading-md"></span>
+                <span className="loading loading-ball loading-lg"></span>
+            </>
+        }
 
     return (
-        <div className='grid grid-cols-3 mx-12'>
+        <div className='grid grid-cols-3 gap-8 m-12'>
             {
-                entertainments.map(item => <div key={item._id}>
-
-
-                    <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure><img src={item.image} alt="Shoes" /></figure>
-                        <div className="card-body">
-                            <p><small>{item.location}</small></p>
-                            <h2 className="card-title">{item.name}</h2>
-                            <p>Type : {item.type}</p>
-                            <p>{item.description}</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-accent">Book</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>)
+                entertainments.map(item => <Enter key={item._id} item={item}></Enter>)
             }
         </div>
     );
