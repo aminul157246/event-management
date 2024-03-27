@@ -1,11 +1,14 @@
 import { useQuery } from '@tanstack/react-query';
 import useAxiosPublic from '../../../../hooks/useAxiosPublic';
+import { useContext } from 'react';
+import { AuthContext } from '../../../../AuthProvider/AuthProvider';
+import Venue from './Venue';
 
 const Venues = () => {
 
 
    const axiosPublic = useAxiosPublic()
-
+const {user} = useContext(AuthContext)
 
         const {data : venues = []} = useQuery({
             queryKey : ['venues'], 
@@ -17,27 +20,20 @@ const Venues = () => {
         })
 
 
+        // const { refetch, data: cart } = useQuery({
+        //     queryKey: ['cart', user?.email],
+    
+        //     queryFn: async () => {
+        //         const res = await axiosPublic.get(`/carts?email=${user?.email}`)
+        //         return res.data;
+        //     },
+    
+        // })
+
     return (
         <div className='grid grid-cols-3 mx-12'>
             {
-                venues.map(item => <div key={item._id}>
-
-
-                    <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure><img src={item.image} alt="Shoes" /></figure>
-                        <div className="card-body">
-                            <p><small>{item.location}</small></p>
-                            <h2 className="card-title">{item.name}</h2>
-                            <p>{item.capacity}</p>
-                            <p>{item.description}</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-accent">Book</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>)
+                venues.map(item => <Venue key={item._id} item={item}></Venue>)
             }
         </div>
     );

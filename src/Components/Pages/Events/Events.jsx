@@ -7,6 +7,8 @@ import catering from '../../../assets/images/catering.jpg'
 import entertainment from '../../../assets/images/enter-bg.jpg'
 
 import { NavLink } from "react-router-dom";
+import EventBanner from './EventBanner/EventBanner'
+
 
 const Events = () => {
 
@@ -23,7 +25,6 @@ const Events = () => {
 
 
 
-
     return (
         <div className='mx-12'>
             {/* <form onSubmit={handleSubmit(onSubmit)}>
@@ -31,7 +32,9 @@ const Events = () => {
                 <button className='btn'>Add Item</button>
             </form> */}
 
-           <div className='grid grid-cols-2 max-w-5xl mx-auto gap-8'>
+            <EventBanner/>
+
+           <div className='grid grid-cols-2 max-w-5xl mx-auto mb-16 gap-8'>
            <NavLink to={'/venues'}>
                 <div
                     className="relative h-[250px] w-[500px]"
@@ -126,6 +129,13 @@ const Events = () => {
 
 
            </div>
+
+
+<div>
+
+</div>
+
+
 
         </div>
     );

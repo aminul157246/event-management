@@ -34,6 +34,10 @@ import Dress from './Components/Pages/Events/Dress/Dress';
 import Photographer from './Components/Pages/Events/Photographer/Photographer'
 import Catering from './Components/Pages/Events/Catering/Catering'
 import Entertainment from './Components/Pages/Events/Entertainment/Entertainment'
+import Dashboard from './layout/Dashboard'
+import UserProfile from './Dashboard/UserProfile/UserProfile'
+import ManageItem from './Dashboard/ManageItem/ManageItem'
+import AddItem from './Dashboard/AddItem/AddItem'
 
 
 
@@ -103,6 +107,33 @@ const router = createBrowserRouter([
 
     ]
   },
+
+  {
+    path: '/dashboard',
+    element: <Dashboard />,
+    children: [
+
+
+
+     
+     
+      // user Dashboard 
+      {
+        path: 'userProfile',
+        element: <UserProfile />
+      },
+      {
+        path: 'manageItem',
+        element: <ManageItem />
+      },
+      {
+        path: 'addItem',
+        element: <AddItem />
+      },
+      
+     
+    ]
+  }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
