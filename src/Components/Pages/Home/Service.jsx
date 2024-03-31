@@ -1,17 +1,31 @@
-import React from 'react';
 import img1 from '../../../assets/images/blog-img-1.jpg'
 import img2 from '../../../assets/images/blog-img-2.jpg'
 import img3 from '../../../assets/images/blog-img-3.jpg'
 import { FaArrowRightLong } from "react-icons/fa6";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
+
+
 const Service = () => {
+
+    useEffect(() => {
+        AOS.init({
+             duration: "1000"
+        });
+    
+    }, [])
+
+
     return (
-        <div className='mx-12 bg-blue-50 p-12 mt-16'>
-            <p className='text-[#F4A492] text-xl text-center  '>Bridely Services</p>
-            <h3 className='text-5xl text-center  font-bold mb-8'>Bringing Your Dream <br /> Event to Life</h3> 
+        <div className='mx-12 bg-blue-50 w-full p-12 mt-16'>
+            <p className='text-[#F4A492] text-xl text-center  '              data-aos="fade-up" data-aos-duration="2000" >Bridely Services</p>
+            <h3 className='text-3xl lg:text-5xl text-center  font-bold mb-8' data-aos="fade-up" data-aos-duration="2000" >Bringing Your Dream <br /> Event to Life</h3> 
             
-            <div className="grid grid-cols-1 md:grid-cols-3">
-            <div className=" relative duration-300 hover:border-b-8   border-red-300 card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="grid grid-cols-1 gap-6 w-full md:grid-cols-3">
+            <div className=" relative duration-300 hover:border-b-8   border-red-300 card card-compact  bg-base-100 shadow-xl" data-aos-duration="2000" data-aos="fade-up">
                 <figure> <img src={img1} alt="" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">Wedding Planning </h2>
@@ -21,7 +35,7 @@ const Service = () => {
                     </div>
                 </div>
             </div>
-            <div className=" relative duration-300 hover:border-b-8   border-red-300 card card-compact w-96 bg-base-100 shadow-xl">
+            <div className=" relative duration-300 hover:border-b-8   border-red-300 card card-compact  bg-base-100 shadow-xl" data-aos-duration="2000" data-aos="fade-up">
                 <figure> <img src={img2} alt="" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">Social Gatherings </h2>
@@ -31,7 +45,7 @@ const Service = () => {
                     </div>
                 </div>
             </div>
-            <div className=" relative duration-300 hover:border-b-8   border-red-300 card card-compact w-96 bg-base-100 shadow-xl">
+            <div className=" relative duration-300 hover:border-b-8   border-red-300 card card-compact  bg-base-100 shadow-xl" data-aos-duration="2000" data-aos="fade-up">
                 <figure> <img src={img3} alt="" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">Social Gatherings </h2>
@@ -43,7 +57,7 @@ const Service = () => {
             </div>
             </div>
 <div className='flex justify-center mt-8'>
-<button className=' ml-16 bg-[#9ACCC9] duration-500 hover:bg-[#F4A492] px-5 text-xl rounded-3xl py-3  mt-4'>View all Services</button>
+<button className='ml-0 lg:ml-16 bg-[#9ACCC9] duration-500 hover:bg-[#F4A492] px-5 text-xl rounded-3xl py-2 lg:py-3  mt-4'>View all Services</button>
 
 </div>
 

@@ -11,7 +11,7 @@ const Footer = () => {
       <footer className="footer relative z-10 p-10 bg-base-200 text-base-content">
         <img src={bird} alt="" />
         <aside>
-          <div className='bg-[#e1f0ee] rounded-full -ml-32 p-16'>
+          <div className='bg-[#e1f0ee] rounded-full lg:-ml-32 p-4 lg:p-16'>
             <div className='flex justify-center'>
               <img src={logo} alt="" />
             </div>
