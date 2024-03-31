@@ -14,7 +14,7 @@ const Events = () => {
     //         first: data.first
     //     }
 
-    //     const res = await axios.post('http://localhost:3000/events', item)
+    //     const res = await axios.post('https://event-management-server-lovat.vercel.app/events', item)
     //         console.log(res.data) 
     // }
 

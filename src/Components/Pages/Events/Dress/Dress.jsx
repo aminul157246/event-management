@@ -7,7 +7,7 @@ const Dress = () => {
     const {isLoading  , data : dress = []} = useQuery({
         queryKey : ['dress'], 
         queryFn : async () => {
-            const res =  await axios.get('http://localhost:3000/dress')
+            const res =  await axios.get('https://event-management-server-lovat.vercel.app/dress')
             // console.log(res.data);
             return res.data
         }

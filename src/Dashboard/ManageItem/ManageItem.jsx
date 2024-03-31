@@ -8,12 +8,11 @@ const ManageItem = () => {
     const { user } = useContext(AuthContext)
     const axiosPublic = useAxiosPublic()
 
-    const {refetch , isLoading, data: carts = [] } = useQuery({
+    const {isLoading, data: carts = [] } = useQuery({
         queryKey: ['cartss', user?.email],
         queryFn: async () => {
             const res = await axiosPublic.get(`/carts?email=${user.email}`)
             //  console.log(res.data);
-            refetch()
             return res.data
         }
     })
@@ -21,9 +20,8 @@ const ManageItem = () => {
 
 
     if(isLoading){
-       return <head>loading...</head>
+        <head>loading...</head>
     }
-
 
 
     return (
@@ -66,7 +64,7 @@ const ManageItem = () => {
                                 </td>
                                 <td>{cart.cartItem?.name}</td>
                                 <td>{cart.cartItem?.price}</td>
-                                <td>  {cart?.cartItem?.location}</td>
+                                {/* <td>  {cart?.cartItem?.location}</td> */}
                                <td>
                                 <button><FaEdit/></button>
                             </td>  
