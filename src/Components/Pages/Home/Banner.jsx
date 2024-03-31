@@ -42,7 +42,7 @@ const Banner = () => {
           <img className='z-10 relative p-10' data-aos="fade-up"
      data-aos-duration="2000" src={bannerImg} alt="" />
           <img data-aos="fade-up"
-     data-aos-duration="2000" src={heart} className='  absolute   top-24 right-96' alt="" />
+     data-aos-duration="2000"  src={heart} className='   absolute   top-24 right-0 lg:right-96 ' alt="" />
           <img data-aos="flip-right" data-aos-duration="2000" src={circle} className='  absolute top-[540px]  w-[200px] lg:w-[500px]  lg:top-20 right-8 lg:right-32' alt="" />
         </div>
       </div>
