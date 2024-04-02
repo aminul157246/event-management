@@ -10,12 +10,12 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 const Navlink = () => {
     return (
         <div>
-             <div className='grid grid-cols-2 max-w-5xl mx-auto mb-16 gap-8'>
+             <div className='grid grid-cols-1 md:grid-cols-2   lg:grid-cols-2 max-w-5xl mx-auto mb-16 gap-8'>
           
           
            <NavLink to={'/venues'}>
                 <div
-                    className="relative h-[250px] w-[500px]"
+                    className="relative h-[250px] w-[400px] lg:w-[500px]"
                     style={{
                         backgroundImage: `url(${venues})`,
                         backgroundSize: 'cover',
@@ -36,7 +36,7 @@ const Navlink = () => {
             </NavLink>
             <NavLink to={'/dress'}>
             <div
-                    className="relative h-[250px] w-[500px]"
+                    className="relative h-[250px] w-[400px] lg:w-[500px]"
                     style={{
                         backgroundImage: `url(${dress})`,
                         backgroundSize: 'cover',
@@ -60,7 +60,7 @@ const Navlink = () => {
 
             <NavLink to={'/photographer'}>
             <div
-                    className="relative h-[250px] w-[500px]"
+                    className="relative h-[250px] w-[400px] lg:w-[500px]"
                     style={{
                         backgroundImage: `url(${photographer})`,
                         backgroundSize: 'cover',
@@ -85,7 +85,7 @@ const Navlink = () => {
 
             <NavLink to={'/catering'}>
             <div
-                    className="relative h-[250px] w-[500px]"
+                    className="relative h-[250px] w-[400px] lg:w-[500px]"
                     style={{
                         backgroundImage: `url(${catering})`,
                         backgroundSize: 'cover',
@@ -110,7 +110,7 @@ const Navlink = () => {
 
             <NavLink to={'/entertainment'}>
             <div
-                    className="relative h-[250px] w-[500px]"
+                    className="relative h-[250px] w-[400px] lg:w-[500px]"
                     style={{
                         backgroundImage: `url(${entertainment})`,
                         backgroundSize: 'cover',

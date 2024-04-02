@@ -18,8 +18,6 @@ const Events = () => {
     //         console.log(res.data) 
     // }
 
-
-
     return (
         <div className='mx-12'>
             {/* <form onSubmit={handleSubmit(onSubmit)}>
@@ -27,17 +25,11 @@ const Events = () => {
                 <button className='btn'>Add Item</button>
             </form> */}
 
-            <EventBanner/>
+            <EventBanner />
 
-          <Navlink/>
-
-
-<div>
-
-</div>
-
-
-
+            <Navlink />
+            <div>
+            </div>
         </div>
     );
 };

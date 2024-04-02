@@ -9,7 +9,7 @@ const EventBanner = () => {
     return (
         <div>
 
-            <div className="mb-16 bg-blue-50 pt-12">
+            <div className="hidden lg:block  mb-16 bg-blue-50 pt-12 ">
                 <div className="relative h-[300px]">
                     <Lottie animationData={banner} loop={true} />;
                     <div className="flex items-center  justify-center left-1/4 top-0 absolute gap-0">
