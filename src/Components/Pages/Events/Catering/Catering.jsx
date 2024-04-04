@@ -19,16 +19,16 @@ const Catering = () => {
 
 
     if (isLoading) {
-        return <>
+        return <div className='flex justify-center items-center h-[300px]'>
             <span className="loading loading-ball loading-xs"></span>
             <span className="loading loading-ball loading-sm"></span>
             <span className="loading loading-ball loading-md"></span>
             <span className="loading loading-ball loading-lg"></span>
-        </>
+        </div>
     }
 
     return (
-        <div className='grid grid-cols-3 gap-8 mt-12  mx-12'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12  mx-12'>
             {
                 caterings.map(item => <Cater item={item} key={item._id}></Cater>)
             }
