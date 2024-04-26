@@ -7,13 +7,13 @@ const Details = () => {
         <div>
             <div className="bg-blue-50 h-96   p-12">
                 <p className="text-center text-[#F4A492]">Contact with us</p>
-                <h3 className='text-center text-6xl font-bold'>Contact Details</h3>
+                <h3 className=' text-3xl text-center lg:text-6xl font-bold'>Contact Details</h3>
                 <div>
 
 
 
 
-                    <div className="flex gap-6 justify-center mt-8">
+                    <div className="lg:flex gap-6 justify-center mt-8">
 
                         <div className='flex gap-4 bg-white item p-8 items-center rounded-tr-3xl'>
                             <div className='p-3 text-2xl rounded-full bg-[#9ACCC9] text-white'>

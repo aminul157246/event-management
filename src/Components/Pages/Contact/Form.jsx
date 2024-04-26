@@ -4,8 +4,8 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa6';
 
 const Form = () => {
     return (
-        <div className='flex max-w-7xl mx-auto gap-12 items-center my-16'>
-            <div className='p-12 bg-[#9ACCC9] rounded-tr-3xl rounded-bl-3xl w-1/3'>
+        <div className='p-6 lg:p-0 lg:flex max-w-7xl mx-auto gap-12 items-center my-16'>
+            <div className='p-12 bg-[#9ACCC9] rounded-tr-3xl rounded-bl-3xl lg:w-1/3'>
                 <img className='rounded-tr-3xl h-[200px] mb-4 border-8 border-white w-full' src={contact} alt="" />
                 <div className=" gap-6 flex justify-right items-center">
 
@@ -29,17 +29,21 @@ const Form = () => {
             <div>
                 <div className='space-y-8'>
                     <div className="flex justify-center"> <img src={style} alt="" /></div>
-                    <h3 className='text-6xl font-bold'>Interested in discussing?  <br /> Get In touch with us.</h3>
+                    <h3 className='text-3xl lg:text-6xl font-bold'>Interested in discussing?  <br /> Get In touch with us.</h3>
                     <p className='text-xl '>Lorem ipsum dolor sit amet consectetur adipiscing elit <br /> sed doeiusm tempor incididunt.</p>
 
-                    <div className='flex justify-center mt-8'>
-                        
-                        <div className='text-center'>
-                        <button className=' ml-16 bg-[#9ACCC9] duration-500 hover:bg-[#F4A492] px-5 text-xl rounded-3xl py-3  mt-4'>Follow Us :</button> 
-              <button className="px-2 ml-2    bg-[#9ACCC9] py-2  text-center rounded-full  text-xl text-[#F4A492]"><FaFacebook /></button>
-              <button className="px-2 ml-2    bg-[#9ACCC9] py-2  text-center rounded-full  text-xl text-[#F4A492]"><FaTwitter /></button>
-              <button className="px-2 ml-2    bg-[#9ACCC9] py-2  text-center rounded-full  text-xl text-[#F4A492]"><FaInstagram /></button>
-            </div>
+                    <div className='  mt-8'>
+
+                        <div className='text-center lg:flex justify-center'>
+                            <div className='-ml-8 lg:-ml-0'>
+                                <button className=' ml-16 bg-[#9ACCC9] duration-500 hover:bg-[#F4A492] mb-6 lg:mb-0 px-5 text-xl rounded-3xl py-3  mt-4'>Follow Us :</button>
+                            </div>
+                            <div >
+                                <button className="px-2 ml-2    bg-[#9ACCC9] py-2  text-center rounded-full  text-xl text-[#F4A492]"><FaFacebook /></button>
+                                <button className="px-2 ml-2    bg-[#9ACCC9] py-2  text-center rounded-full  text-xl text-[#F4A492]"><FaTwitter /></button>
+                                <button className="px-2 ml-2    bg-[#9ACCC9] py-2  text-center rounded-full  text-xl text-[#F4A492]"><FaInstagram /></button>
+                            </div>
+                        </div>
 
                     </div>
 
