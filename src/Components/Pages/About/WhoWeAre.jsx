@@ -14,7 +14,7 @@ const WhoWeAre = () => {
 
                 <p className='text-[#F4A492] text-xl    '>Who We Are</p>
 
-                <h2 className='text-6xl font-bold'>Planner for Your <br /> Perfect Wedding</h2>
+                <h2 className='text-3xl lg:text-6xl font-bold'>Planner for Your <br /> Perfect Wedding</h2>
                 <p className="text-xl">
                     Lorem ipsum dolor sit amet consectetur adipiscing elit <br /> sed doeiusm tempor incididunt donec quam felis ultri <br /> cies nec, pellentesque eu, pretium quis sem.
                 </p>

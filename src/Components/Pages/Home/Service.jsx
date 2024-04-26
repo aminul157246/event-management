@@ -20,7 +20,7 @@ const Service = () => {
 
 
     return (
-        <div className='mx-12 bg-blue-50 w-full p-12 mt-16'>
+        <div className='mx-12 bg-blue-50  p-12 mt-16'>
             <p className='text-[#F4A492] text-xl text-center  '              data-aos="fade-up" data-aos-duration="2000" >Bridely Services</p>
             <h3 className='text-3xl lg:text-5xl text-center  font-bold mb-8' data-aos="fade-up" data-aos-duration="2000" >Bringing Your Dream <br /> Event to Life</h3> 
             

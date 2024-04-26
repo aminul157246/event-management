@@ -17,7 +17,7 @@ const About = () => {
 
 
     return (
-        <div className='lg:flex w-full mx-12 items-center  bg-blue-50 p-12 gap-16 mt-16 '>
+        <div className='lg:flex  mx-12 items-center  bg-blue-50 p-12 gap-16 mt-16 '>
             <div className='relative'>
                 <img data-aos="fade-right"
      data-aos-duration="2000" className='absolute w-12 lg:w-36  -top-6 lg:-top-16 z-0' src={circle} alt="" />

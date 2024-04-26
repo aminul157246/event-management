@@ -6,12 +6,12 @@ import img3 from '../../../assets/images/wine.jpg'
 
 const WhatWeDo = () => {
     return (
-        <div className='pt-12 w-full pb-40 gap-48 bg-blue-50 lg:flex mx-12 justify-center my-16 items-center'>
+        <div className='pt-12  pb-40 gap-48 bg-blue-50 lg:flex mx-12 justify-center my-16 items-center'>
 
             <div className='relative px-12'>
-                <div className='' ><img className='w-72 lg:w-full h-full rounded-bl-[70px] border-8 border-white rounded-tr-[70px] ' src={img1} alt="" /></div>
-                <div className=' absolute w-44 lg:w-96 ml-36 lg:ml-72 top-40 lg:top-56'><img className=' rounded-bl-[70px] border-8 border-white rounded-tr-[70px]' src={img2} alt="" /></div>
-                <div className=' lg:absolute top-96'><img className='w-44 lg:w-full h-full rounded-bl-[70px] border-8 border-white rounded-tr-[70px]' src={img3} alt="" /></div>
+                <div className='' ><img className=' w-full   h-full rounded-bl-[70px] border-8 border-white rounded-tr-[70px] ' src={img1} alt="" /></div>
+                <div className='hidden lg:block absolute w-44 lg:w-96 ml-36 lg:ml-72 top-40 lg:top-56'><img className=' rounded-bl-[70px] border-8 border-white rounded-tr-[70px]' src={img2} alt="" /></div>
+                <div className='hidden lg:block lg:absolute top-96'><img className='w-44 lg:w-full h-full rounded-bl-[70px] border-8 border-white rounded-tr-[70px]' src={img3} alt="" /></div>
             </div>
 
             <div className='space-y-4'>

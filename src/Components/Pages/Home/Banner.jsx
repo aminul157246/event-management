@@ -20,7 +20,7 @@ const Banner = () => {
 
   return (
     <>
-      <div className='lg:flex w-full justify-between bg-blue-50 mx-12 gap-12 pt-6 lg:pt-12'>
+      <div className='lg:flex   justify-between bg-blue-50 mx-12 gap-12 pt-6 lg:pt-12'>
         <div>
           <img data-aos="fade-up"
      data-aos-duration="2000" className='ml-4  w-12  lg:w-24  lg:ml-96' src={flower} alt="" />
@@ -42,8 +42,8 @@ const Banner = () => {
           <img className='z-10 relative p-10' data-aos="fade-up"
      data-aos-duration="2000" src={bannerImg} alt="" />
           <img data-aos="fade-up"
-     data-aos-duration="2000"  src={heart} className='   absolute   top-24 right-0 lg:right-96 ' alt="" />
-          <img data-aos="flip-right" data-aos-duration="2000" src={circle} className='  absolute top-[540px]  w-[200px] lg:w-[500px]  lg:top-20 right-8 lg:right-32' alt="" />
+     data-aos-duration="2000"  src={heart} className='lg:block hidden   absolute   top-24 right-0 lg:right-80 ' alt="" />
+          <img data-aos="flip-right" data-aos-duration="2000" src={circle} className='  absolute top-[540px]  w-[200px] lg:w-[500px]  lg:top-20 right-32 lg:right-32' alt="" />
         </div>
       </div>
     </>

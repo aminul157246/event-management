@@ -7,14 +7,6 @@ import { NavLink } from "react-router-dom";
 const About = () => {
   return (
     <>
-      {/* <div>
-        <img src={bg} className="w-full h-96" alt="" />
-      </div> */}
-
-
-
-
-
       <div
         className="relative px-12 lg:p-0 h-[60vh] md:h-[30vh] lg:h-[40vh]"
         style={{
@@ -22,7 +14,7 @@ const About = () => {
           backgroundSize: 'cover'
         }}
       >
-         
+
         <div className="absolute top-12   lg:left-[400px]  z-10 space-y-3">
           <h2 className="text-2xl    lg:text-6xl  font-bold text-black font-Vidaloka">
 
@@ -39,9 +31,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-
-
 
       <WhatWeDo />
       <WhoWeAre />
