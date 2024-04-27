@@ -6,7 +6,7 @@ import Details from './Details';
 const Contact = () => {
     return (
         <div>
-            <ContactBanner/>
+            {/* <ContactBanner/> */}
             <Form/>
             <Details/>
         </div>
