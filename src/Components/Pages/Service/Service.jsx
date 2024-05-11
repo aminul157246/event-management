@@ -5,12 +5,12 @@ import ServiceBanner from "./ServiceBanner";
 
 const Service = () => {
     return (
-<div>
-<ServiceBanner/>
-<Plan/>
-        <Category/>
+        <div className="text-gray-800">
+            <ServiceBanner />
+            <Plan />
+            <Category />
 
-</div>
+        </div>
     );
 };
 

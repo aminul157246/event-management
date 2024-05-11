@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='flex justify-center'>
               <img src={logo} alt="" />
             </div>
-            <p className='text-xl text-center py-4'>Lorem ipsum dolor sit amet, <br /> iscing elitsed do eiusmod </p>
+            <p className='text-xl text-center text-gray-800 py-4'>Lorem ipsum dolor sit amet, <br /> iscing elitsed do eiusmod </p>
             <div className='text-center'>
               <button className="px-3    text-center rounded-lg  text-xl text-[#F4A492]"><FaFacebook /></button>
               <button className="px-3    text-center rounded-lg  text-xl text-[#F4A492]"><FaTwitter /></button>

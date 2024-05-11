@@ -13,7 +13,7 @@ const ServiceBanner = () => {
       >
 
         <div className="absolute top-12   lg:left-[400px]  z-10 space-y-3">
-          <h2 className="text-2xl    lg:text-6xl  font-bold text-black font-Vidaloka">
+          <h2 className="text-2xl  uppercase  lg:text-6xl  font-bold text-black font-Vidaloka">
 
             services
           </h2>

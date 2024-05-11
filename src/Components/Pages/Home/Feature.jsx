@@ -7,7 +7,7 @@ import feature4 from '../../../assets/images/home-2-planning-icon-4.png'
 
 const Feature = () => {
     return (
-        <div className="mt-16  mx-12 lg:flex gap-12 items-center bg-blue-50 p-12">
+        <div className="mt-16 text-gray-800  px-12 lg:flex gap-12 items-center bg-blue-50 p-12">
             <div>
                 <img src={bird} alt="" />
                 <div className="lg:ml-8">

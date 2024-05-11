@@ -20,10 +20,10 @@ const Service = () => {
 
 
     return (
-        <div className='mx-12 bg-blue-50  p-12 mt-16'>
+        <div className='px-12  bg-blue-50  p-12 mt-16'>
             <p className='text-[#F4A492] text-xl text-center  '              data-aos="fade-up" data-aos-duration="2000" >Bridely Services</p>
-            <h3 className='text-3xl lg:text-5xl text-center  font-bold mb-8' data-aos="fade-up" data-aos-duration="2000" >Bringing Your Dream <br /> Event to Life</h3> 
-            
+            <h3 className='text-3xl lg:text-5xl text-center text-gray-800  font-bold mb-8' data-aos="fade-up" data-aos-duration="2000 " >Bringing Your Dream <br /> Event to Life</h3> 
+        
             <div className="grid grid-cols-1 gap-6 w-full md:grid-cols-3">
             <div className=" relative duration-300 hover:border-b-8   border-red-300 card card-compact  bg-base-100 shadow-xl" data-aos-duration="2000" data-aos="fade-up">
                 <figure> <img src={img1} alt="" /></figure>
@@ -57,7 +57,7 @@ const Service = () => {
             </div>
             </div>
 <div className='flex justify-center mt-8'>
-<button className='ml-0 lg:ml-16 bg-[#9ACCC9] duration-500 hover:bg-[#F4A492] px-5 text-xl rounded-3xl py-2 lg:py-3  mt-4'>View all Services</button>
+<button className='ml-0 lg:ml-16 bg-[#9ACCC9] duration-500 hover:bg-[#F4A492] px-5 text-xl rounded-3xl py-2 text-gray-800 lg:py-3  mt-4'>View all Services</button>
 
 </div>
 

@@ -51,7 +51,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="navbar  mx-12">
+      <div className="navbar py-4 md:px-12 px-3 lg:px-12">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="  lg:hidden">

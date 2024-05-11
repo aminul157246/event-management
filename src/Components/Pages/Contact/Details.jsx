@@ -5,7 +5,7 @@ import { TfiEmail } from "react-icons/tfi";
 const Details = () => {
     return (
         <div>
-            <div className="bg-blue-50 h-96   p-12">
+            <div className="bg-blue-50 h-96 text-gray-800  p-12">
                 <p className="text-center text-[#F4A492]">Contact with us</p>
                 <h3 className=' text-3xl text-center lg:text-6xl font-bold'>Contact Details</h3>
                 <div>

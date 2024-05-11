@@ -25,7 +25,7 @@ const Gallery = () => {
     <div>
 
       {/* gallery  */}
-      <div className='mt-16 mx-12' >
+      <div className='mt-16 px-12' >
         <p className='text-[#F4A492] text-xl text-center  '              >  Unforgettable Events</p>
         <h3 className='text-2xl lg:text-5xl text-center  font-bold mb-8' >Capturing Love and Celebration <br /> in Visual Showcase</h3>
 
@@ -40,7 +40,7 @@ const Gallery = () => {
         </div>
         <div className='flex-row md:flex-col lg:flex-col justify-center items-center mt-4 gap-4 '>
           <div className='flex md:justify-center'>
-            <button className=' ml-16 bg-[#9ACCC9] duration-500 hover:bg-[#F4A492] px-5 text-xl rounded-3xl py-3  mt-4'>View Galary</button>
+            <button className=' ml-16 bg-[#9ACCC9] duration-500 hover:bg-[#F4A492] px-5 text-xl text-gray-800 rounded-3xl py-3  mt-4'>View Galary</button>
 
           </div>
         </div>

@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Reservation = () => {
     return (
-        <div className="mt-16 mx-12">
+        <div className="mt-16 px-12">
             <p className='text-[#F4A492] text-xl text-center  '>Unforgettable Events</p>
 
             <h3 className='text-3xl lg:text-5xl text-center font-bold'>Make Reservations</h3>
@@ -25,7 +25,7 @@ const Reservation = () => {
 
                 </div>
                 <div className="">
-                    <textarea className='mt-4 rounded-3xl  lg:ml-52 w-72 lg:w-2/3 border-2 border-gray-300 p-2' name="" id="" cols="50" placeholder='Message' rows="3"></textarea>
+                    <textarea className='mt-4 rounded-3xl  lg:ml-52 w-2/3 border-2 border-gray-300 p-2' name="" id="" cols="50" placeholder='Message' rows="3"></textarea>
                     <div className="flex items-center justify-center mt-4">
                         <button className="btn px-8 text-[#F4A492]"><span className="flex gap-2 items-center">Reserve<FaArrowRightLong/></span></button>
                     </div>
